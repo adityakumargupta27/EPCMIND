@@ -1,0 +1,83 @@
+{
+  "A": {
+    "status": "SUCCESS",
+    "question": "What is the required UPS efficiency?",
+    "response": {
+      "role": "assistant",
+      "content": "The required UPS efficiency for the Bengaluru Hyperscale Data Centre project is greater than or equal to 96%. The current vendor submission of 94.8% represents a deviation of -1.2% from the project specification.",
+      "sources": [
+        {
+          "document": "Demo Project Context",
+          "section": "Electrical Systems - UPS Requirements",
+          "page": 14
+        }
+      ],
+      "meta": {
+        "risk": "MEDIUM",
+        "action": "Initiate technical clarification with the vendor regarding efficiency compliance and verify impact on OPEX/TCO."
+      }
+    }
+  },
+  "B": {
+    "status": "SUCCESS",
+    "question": "Which equipment currently threatens the commissioning schedule?",
+    "response": {
+      "role": "assistant",
+      "content": "The UPS-04 unit currently threatens the commissioning schedule. It is experiencing a 12-day delivery delay, which exceeds the available 4-day project float, resulting in a net schedule exposure of 8 days for the Integrated Systems Testing milestone.",
+      "sources": [
+        {
+          "document": "Demo Project Context",
+          "section": "Schedule Risks",
+          "page": 2
+        }
+      ],
+      "meta": {
+        "risk": "HIGH",
+        "action": "Expedite vendor shipping or implement parallel testing strategy to mitigate the 8-day exposure."
+      }
+    }
+  },
+  "C": {
+    "status": "SUCCESS",
+    "question": "What is the required battery autonomy?",
+    "response": {
+      "role": "assistant",
+      "content": "The required battery autonomy for the Bengaluru Hyperscale Data Centre project is at least 15 minutes.",
+      "sources": [
+        {
+          "document": "Demo Project Context",
+          "section": "Technical Requirements",
+          "page": 1
+        }
+      ],
+      "meta": {
+        "risk": "HIGH",
+        "action": "Coordinate with the vendor to address the 3-minute autonomy deficit as current submission at 12 minutes is non-compliant."
+      }
+    }
+  },
+  "D": {
+    "status": "SUCCESS",
+    "question": "Tell me about RFI-042.",
+    "response": {
+      "role": "assistant",
+      "content": "RFI-042 concerns a cable routing conflict within the UPS room for project BLR-DC-01. It shows a 91% similarity to historical issue RFI-017. As the project is currently in the MEP installation and commissioning phase, this conflict requires immediate resolution to mitigate further schedule slippage, given that the project is already at risk due to UPS-04 delivery delays.",
+      "sources": [
+        {
+          "document": "Demo Project Context",
+          "section": "RFI Status",
+          "page": 1
+        }
+      ],
+      "meta": {
+        "risk": "HIGH",
+        "action": "Initiate immediate design coordination meeting to resolve routing conflict based on RFI-017 resolution precedent."
+      }
+    }
+  },
+  "E": {
+    "status": "ERROR",
+    "question": "What fire suppression system is specified for Data Hall 3?",
+    "error": "[WinError 10054] An existing connection was forcibly closed by the remote host"
+  }
+}

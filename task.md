@@ -1,0 +1,21 @@
+# Specification Compliance Intelligence Tasks
+
+- [x] Update data models and types (`backend/models/schemas.py`, `src/types.ts`, `src/components/shared/Badges.tsx`) <!-- id: 0 -->
+- [x] Extend `backend/rag/vector_store.py` and `backend/rag/retriever.py` for document-scoped filtering and compliance persistence <!-- id: 1 -->
+- [x] Create core compliance engine (`backend/services/compliance_service.py`) <!-- id: 2 -->
+- [x] Update FastAPI routes (`backend/api/compliance.py`) <!-- id: 3 -->
+- [x] Update frontend API helper and route (`src/lib/api.ts`, `src/routes/compliance.tsx`) <!-- id: 4 -->
+- [x] Create test PDF generator script (`backend/scripts/generate_compliance_test_pdfs.py`) <!-- id: 5 -->
+- [x] Create and execute automated compliance verification test suite (`backend/scripts/verify_compliance.py`) <!-- id: 6 -->
+  - [x] Test 1: Ingest test PDFs <!-- id: 7 -->
+  - [x] Test 2: Parameter 1 UPS Efficiency (`NON-COMPLIANT`, `-1.2%`, real page citation) <!-- id: 8 -->
+  - [x] Test 3: Parameter 2 Battery Autonomy (`NON-COMPLIANT`, `-3 min`, real page citation) <!-- id: 9 -->
+  - [x] Test 4: Parameter 3 UPS Redundancy (`COMPLIANT`, `N+1`) <!-- id: 10 -->
+  - [x] Test 5: Parameter 4 Generator Runtime (`COMPLIANT`, `52 hours`) <!-- id: 11 -->
+  - [x] Test 6: Parameter 5 Cooling Redundancy (`NON-COMPLIANT`, `N`) <!-- id: 12 -->
+  - [x] Test 7: Parameter 6 Battery Design Life (`NOT_VERIFIABLE`, no vendor citation) <!-- id: 13 -->
+  - [x] Test 8: Error handling & invalid document selection <!-- id: 14 -->
+  - [x] Test 9: Persistence across backend server restart <!-- id: 15 -->
+  - [x] Test 10: Verify normal Copilot RAG functionality remains working <!-- id: 16 -->
+- [x] Run frontend production build check (`npm run build`) <!-- id: 17 -->
+- [x] Create walkthrough documentation <!-- id: 18 -->
