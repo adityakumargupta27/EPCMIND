@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models.schemas import ProjectDataResponse
+from ..models.schemas import ProjectDataResponse
 from data.mock_data import (
     mock_project, health_breakdown, progress_breakdown, project_team,
     disciplines, equipment_list

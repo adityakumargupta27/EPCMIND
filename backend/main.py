@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 
-from api import project, documents, compliance, rfis, risks, schedule, dashboard, copilot
+from .api import project, documents, compliance, rfis, risks, schedule, dashboard, copilot
 
 load_dotenv()
 

@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models.schemas import ScheduleDataResponse
+from ..models.schemas import ScheduleDataResponse
 from data.mock_data import schedule_activities, milestones, upcoming_milestones, schedule_stats, critical_path
 
 router = APIRouter(prefix="/api/schedule", tags=["schedule"])

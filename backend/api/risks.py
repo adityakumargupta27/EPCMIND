@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models.schemas import RiskDataResponse
+from ..models.schemas import RiskDataResponse
 from data.mock_data import mock_risks, risk_stats, risk_distribution
 
 router = APIRouter(prefix="/api/risks", tags=["risks"])
